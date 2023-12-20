@@ -1,7 +1,14 @@
-import profilePic from '../assets/ashish.png'
+import profilePic from '../assets/ashish.png';
+import { useState, UseEffect } from 'react';
 function Home(){
+    const [theme, setTheme] = useState(()=>{
+        const storedTheme = localStorage.getItem('theme');
+        return storedTheme ? storedTheme : 'light';
+    })
+    
     return(
         <>
+       
         <div className="home-container">
             <img src={profilePic} className='user' alt="" />
             <h2>Hey I am Ashish!</h2>

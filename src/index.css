@@ -1,4 +1,4 @@
-:root {
+body{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -21,12 +21,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: dark;
+}
+.navbar-dark{
+  width: 690px;
+  margin: 20px auto;
+  display: flex;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 .theme{
   background-color: transparent;
   padding: 0;
   margin: 0;
   border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.theme-dark{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  color: white;
 }
 .nav-links{
   display: flex;
@@ -35,6 +57,10 @@
 .nav-link{
   text-decoration: none;
   color: rgb(13, 13, 13);
+}
+.navlink-dark{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .home-container{
   width: 690px;
